@@ -1,0 +1,32 @@
+digraph G {
+    node [shape=box];
+    "source\nr\nID: 33" -> "sourceItem\n\nID: 32";
+    "sourceItem\n\nID: 32" -> "funcSignature\n\nID: 4";
+    "funcSignature\n\nID: 4" -> "argDef\n\nID: 3";
+    "argDef\n\nID: 3" -> "TYPEDEF\nbool\nID: 1";
+    "argDef\n\nID: 3" -> "IDENTIFIER\ntest_func\nID: 2";
+    "sourceItem\n\nID: 32" -> "block\n\nID: 31";
+    "block\n\nID: 31" -> "listStatement\n\nID: 30";
+    "listStatement\n\nID: 30" -> "while\n\nID: 29";
+    "while\n\nID: 29" -> "LESS\n\nID: 8";
+    "LESS\n\nID: 8" -> "IDENTIFIER\ni\nID: 6";
+    "LESS\n\nID: 8" -> "INT\n10\nID: 7";
+    "while\n\nID: 29" -> "block\n\nID: 28";
+    "block\n\nID: 28" -> "listStatement\n\nID: 27";
+    "listStatement\n\nID: 27" -> "if\n\nID: 26";
+    "if\n\nID: 26" -> "GREATER\n\nID: 12";
+    "GREATER\n\nID: 12" -> "IDENTIFIER\ni\nID: 10";
+    "GREATER\n\nID: 12" -> "INT\n3\nID: 11";
+    "if\n\nID: 26" -> "ifStatement\n\nID: 25";
+    "ifStatement\n\nID: 25" -> "block\n\nID: 17";
+    "block\n\nID: 17" -> "listStatement\n\nID: 16";
+    "listStatement\n\nID: 16" -> "assignment\n\nID: 15";
+    "assignment\n\nID: 15" -> "IDENTIFIER\na\nID: 13";
+    "assignment\n\nID: 15" -> "INT\n1\nID: 14";
+    "ifStatement\n\nID: 25" -> "else\n\nID: 24";
+    "else\n\nID: 24" -> "block\n\nID: 23";
+    "block\n\nID: 23" -> "listStatement\n\nID: 22";
+    "listStatement\n\nID: 22" -> "assignment\n\nID: 21";
+    "assignment\n\nID: 21" -> "IDENTIFIER\na\nID: 19";
+    "assignment\n\nID: 21" -> "INT\n2\nID: 20";
+}

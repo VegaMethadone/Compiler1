@@ -1,0 +1,15 @@
+digraph G {
+    node [shape=box];
+    "source\nr\nID: 13" -> "sourceItem\n\nID: 12";
+    "sourceItem\n\nID: 12" -> "funcSignature\n\nID: 4";
+    "funcSignature\n\nID: 4" -> "argDef\n\nID: 3";
+    "argDef\n\nID: 3" -> "TYPEDEF\nbool\nID: 1";
+    "argDef\n\nID: 3" -> "IDENTIFIER\ntest_func\nID: 2";
+    "sourceItem\n\nID: 12" -> "block\n\nID: 11";
+    "block\n\nID: 11" -> "listStatement\n\nID: 10";
+    "listStatement\n\nID: 10" -> "assignment\n\nID: 9";
+    "assignment\n\nID: 9" -> "IDENTIFIER\nc\nID: 5";
+    "assignment\n\nID: 9" -> "PLUS\n\nID: 8";
+    "PLUS\n\nID: 8" -> "INT\n1\nID: 6";
+    "PLUS\n\nID: 8" -> "INT\n2\nID: 7";
+}
